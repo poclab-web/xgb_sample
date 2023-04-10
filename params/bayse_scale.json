@@ -1,0 +1,10 @@
+{
+    "subsample": "float",
+    "colsample_bytree": "float",
+    "reg_alpha": "log",
+    "reg_lambda": "log",
+    "learning_rate": "log",
+    "min_child_weight": "int",
+    "max_depth": "int",
+    "gamma": "log"
+}

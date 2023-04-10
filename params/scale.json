@@ -1,0 +1,10 @@
+{
+    "subsample": "linear",
+    "colsample_bytree": "linear",
+    "reg_alpha": "log",
+    "reg_lambda": "log",
+    "learning_rate": "log",
+    "min_child_weight": "linear",
+    "max_depth": "linear",
+    "gamma": "log"
+}
