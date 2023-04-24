@@ -14,6 +14,8 @@ from tuning import tune
 from required_functions.logging import set_logger
 
 def train(args):
+    from logging import getLogger
+    logger = getLogger('XGBoost')
     # start tuning and find best parameters
     print('tuning start')
     best_params = tune(csv_path=args.csv_path, task=args.mode, tuning_method=args.tuning_method)
@@ -22,6 +24,8 @@ def train(args):
     if not os.path.exists(result_dir):
         os.makedirs(result_dir, exist_ok=True)
     save_dir = './result/{}'.format(args.task_id)
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir, exist_ok=True)
     # save json
     json_path = os.path.join(save_dir, 'best_params.json')
     json_file = open(json_path, 'w')
@@ -37,13 +41,13 @@ def train(args):
     
     # validate model
     scores = kfold(model, x_test, y_test)
-    logger('validate score:::{}'.format(scores))
-    logger('validate mead:::{}'.format(np.mean(scores)))
+    logger.debug('validate score:::{}'.format(scores))
+    logger.debug('validate mead:::{}'.format(np.mean(scores)))
 
-    model_path = './result/{}/model.pickle'
-    f = open(model_path, 'r')
+    model_path = os.path.join(save_dir, 'model.pickle')
+    f = open(model_path, 'wb')
     pickle.dump(model, f)
-    logger('model saved!!')
+    logger.debug('model saved!!')
     
     return scores
 

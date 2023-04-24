@@ -15,7 +15,7 @@ class XGBoostAnalyzer:
         # show predict properties to graph
         if to_image:
             fig = plt.figure(figsize=(15, 15))
-            ax = fig.add_subplot(1)
+            ax = fig.add_subplot(1, 1, 1)
 
             ax.scatter(y_true, y_pred)
             ax.set_xlabel('y_true')

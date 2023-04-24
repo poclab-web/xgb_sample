@@ -52,7 +52,7 @@ class TuningMethod:
     def random_search(self, x, y):
         logger.info('optimize by using RandomSearch')
         randomcv = RandomizedSearchCV(self.model, self.cv_params, cv=self.cv,
-                            scoring=setting['SCORING'], n_jobs=-1, random_state=setting['SEED'], n_iter=1000)
+                            scoring=setting['SCORING'], n_jobs=-1, random_state=setting['SEED'], n_iter=100)
         # fitting step
         fit_params = self.set_params(x, y)
 

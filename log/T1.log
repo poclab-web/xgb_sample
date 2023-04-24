@@ -1,0 +1,312 @@
+2023-04-11 09:17:55,714:INFO-load_data.py-drop null columns
+2023-04-11 09:17:55,729:INFO-load_data.py-time elapsed to load data:::0.04285311698913574
+2023-04-11 09:17:55,730:DEBUG-load_data.py-sample of data loaded as X:::[0 0 0 ... 0 0 0]
+2023-04-11 09:17:55,730:DEBUG-load_data.py-sample of data loaded as Y:::2.0106
+2023-04-11 09:17:55,731:INFO-load_data.py-input data were split
+2023-04-11 09:17:55,731:INFO-load_data.py-seed:::42
+2023-04-11 09:17:58,716:INFO-tuning.py-random-search
+2023-04-11 09:17:58,716:INFO-pretuning.py-pre tuning start
+2023-04-11 09:17:58,818:INFO-pretuning.py-now validating:::subsample
+2023-04-11 09:18:02,834:DEBUG-pretuning.py-validation score :::[-3.66050355 -0.11146106 -0.12140237 -0.10095249 -0.06885404 -0.06695412
+ -0.07790129 -0.07559798 -0.06795654 -0.07448963]
+2023-04-11 09:18:02,835:DEBUG-pretuning.py-local max at subsample:::(array([1, 5, 8]),)
+2023-04-11 09:18:02,835:DEBUG-pretuning.py-cv params updated:::[0.1, 0.6, 0.9]
+2023-04-11 09:18:02,835:INFO-pretuning.py-now validating:::colsample_bytree
+2023-04-11 09:18:06,596:DEBUG-pretuning.py-validation score :::[-0.18136049 -0.05375263 -0.05879554 -0.0648095  -0.06114965 -0.06810722
+ -0.06422743 -0.06234578 -0.06976935 -0.06663503 -0.07448963]
+2023-04-11 09:18:06,597:DEBUG-pretuning.py-local max at colsample_bytree:::(array([1, 4, 7, 9]),)
+2023-04-11 09:18:06,597:DEBUG-pretuning.py-cv params updated:::[0.1, 0.4, 0.7, 0.9]
+2023-04-11 09:18:06,597:INFO-pretuning.py-now validating:::reg_alpha
+2023-04-11 09:18:09,789:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07417386 -0.07340436 -0.07288664 -0.07349711 -0.0735589
+ -0.07097941 -0.06987261]
+2023-04-11 09:18:09,789:DEBUG-pretuning.py-local max at reg_alpha:::(array([3]),)
+2023-04-11 09:18:09,789:DEBUG-pretuning.py-cv params updated:::[0.01]
+2023-04-11 09:18:09,789:INFO-pretuning.py-now validating:::reg_lambda
+2023-04-11 09:18:13,135:DEBUG-pretuning.py-validation score :::[-0.06748693 -0.06725848 -0.06642707 -0.06485668 -0.0720688  -0.06270846
+ -0.0646266  -0.07448963]
+2023-04-11 09:18:13,135:DEBUG-pretuning.py-local max at reg_lambda:::(array([3, 5]),)
+2023-04-11 09:18:13,136:DEBUG-pretuning.py-cv params updated:::[0.01, 0.1]
+2023-04-11 09:18:13,136:INFO-pretuning.py-now validating:::learning_rate
+2023-04-11 09:21:05,839:DEBUG-pretuning.py-validation score :::[-3.66050355 -0.60452233 -0.06792766 -0.06802401 -0.06739979 -0.07022904
+ -0.07448963 -0.06859804]
+2023-04-11 09:21:05,839:DEBUG-pretuning.py-local max at learning_rate:::(array([2, 4]),)
+2023-04-11 09:21:05,840:DEBUG-pretuning.py-cv params updated:::[0.001, 0.03]
+2023-04-11 09:21:05,840:INFO-pretuning.py-now validating:::min_child_weight
+2023-04-11 09:21:15,727:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07395161 -0.1006823  -0.10745782 -0.09660053 -0.11352508
+ -0.12421868 -0.11149386]
+2023-04-11 09:21:15,727:DEBUG-pretuning.py-local max at min_child_weight:::(array([1, 4]),)
+2023-04-11 09:21:15,727:DEBUG-pretuning.py-cv params updated:::[3, 9]
+2023-04-11 09:21:15,727:INFO-pretuning.py-now validating:::max_depth
+2023-04-11 09:21:22,668:DEBUG-pretuning.py-validation score :::[-0.06132109 -0.06047256 -0.06357972 -0.06843529 -0.06789275 -0.07448963
+ -0.06687416 -0.07393    -0.07385229 -0.0749379 ]
+2023-04-11 09:21:22,668:DEBUG-pretuning.py-local max at max_depth:::(array([1, 4, 6, 8]),)
+2023-04-11 09:21:22,668:DEBUG-pretuning.py-cv params updated:::[2, 5, 7, 9]
+2023-04-11 09:21:22,668:INFO-pretuning.py-now validating:::gamma
+2023-04-11 09:23:09,617:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07454924 -0.07470379 -0.07587375 -0.07486175 -0.08346431
+ -0.07862083 -0.09662094]
+2023-04-11 09:23:09,617:DEBUG-pretuning.py-local max at gamma:::(array([4, 6]),)
+2023-04-11 09:23:09,617:DEBUG-pretuning.py-cv params updated:::[0.03, 0.3]
+2023-04-11 09:23:09,618:INFO-tuning.py-pre tuning finished!!
+2023-04-11 09:23:09,618:INFO-tuning_method.py-optimize by using RandomSearch
+2023-04-11 09:32:47,624:INFO-load_data.py-drop null columns
+2023-04-11 09:32:47,631:INFO-load_data.py-time elapsed to load data:::0.028660058975219727
+2023-04-11 09:32:47,631:DEBUG-load_data.py-sample of data loaded as X:::[0 0 0 ... 0 0 0]
+2023-04-11 09:32:47,631:DEBUG-load_data.py-sample of data loaded as Y:::2.0106
+2023-04-11 09:32:47,633:INFO-load_data.py-input data were split
+2023-04-11 09:32:47,633:INFO-load_data.py-seed:::42
+2023-04-11 09:32:51,423:INFO-tuning.py-random-search
+2023-04-11 09:32:51,423:INFO-pretuning.py-pre tuning start
+2023-04-11 09:32:51,513:INFO-pretuning.py-now validating:::subsample
+2023-04-11 09:32:56,418:DEBUG-pretuning.py-validation score :::[-3.66050355 -0.11146106 -0.12140237 -0.10095249 -0.06885404 -0.06695412
+ -0.07790129 -0.07559798 -0.06795654 -0.07448963]
+2023-04-11 09:32:56,419:DEBUG-pretuning.py-local max at subsample:::(array([1, 5, 8]),)
+2023-04-11 09:32:56,419:DEBUG-pretuning.py-cv params updated:::[0.1, 0.6, 0.9]
+2023-04-11 09:32:56,419:INFO-pretuning.py-now validating:::colsample_bytree
+2023-04-11 09:33:01,037:DEBUG-pretuning.py-validation score :::[-0.18136049 -0.05375263 -0.05879554 -0.0648095  -0.06114965 -0.06810722
+ -0.06422743 -0.06234578 -0.06976935 -0.06663503 -0.07448963]
+2023-04-11 09:33:01,037:DEBUG-pretuning.py-local max at colsample_bytree:::(array([1, 4, 7, 9]),)
+2023-04-11 09:33:01,037:DEBUG-pretuning.py-cv params updated:::[0.1, 0.4, 0.7, 0.9]
+2023-04-11 09:33:01,037:INFO-pretuning.py-now validating:::reg_alpha
+2023-04-11 09:33:05,351:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07417386 -0.07340436 -0.07288664 -0.07349711 -0.0735589
+ -0.07097941 -0.06987261]
+2023-04-11 09:33:05,351:DEBUG-pretuning.py-local max at reg_alpha:::(array([3]),)
+2023-04-11 09:33:05,351:DEBUG-pretuning.py-cv params updated:::[0.01]
+2023-04-11 09:33:05,351:INFO-pretuning.py-now validating:::reg_lambda
+2023-04-11 09:33:09,882:DEBUG-pretuning.py-validation score :::[-0.06748693 -0.06725848 -0.06642707 -0.06485668 -0.0720688  -0.06270846
+ -0.0646266  -0.07448963]
+2023-04-11 09:33:09,882:DEBUG-pretuning.py-local max at reg_lambda:::(array([3, 5]),)
+2023-04-11 09:33:09,882:DEBUG-pretuning.py-cv params updated:::[0.01, 0.1]
+2023-04-11 09:33:09,883:INFO-pretuning.py-now validating:::learning_rate
+2023-04-11 09:36:25,581:DEBUG-pretuning.py-validation score :::[-3.66050355 -0.60452233 -0.06792766 -0.06802401 -0.06739979 -0.07022904
+ -0.07448963 -0.06859804]
+2023-04-11 09:36:25,581:DEBUG-pretuning.py-local max at learning_rate:::(array([2, 4]),)
+2023-04-11 09:36:25,581:DEBUG-pretuning.py-cv params updated:::[0.001, 0.03]
+2023-04-11 09:36:25,581:INFO-pretuning.py-now validating:::min_child_weight
+2023-04-11 09:36:34,517:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07395161 -0.1006823  -0.10745782 -0.09660053 -0.11352508
+ -0.12421868 -0.11149386]
+2023-04-11 09:36:34,517:DEBUG-pretuning.py-local max at min_child_weight:::(array([1, 4]),)
+2023-04-11 09:36:34,518:DEBUG-pretuning.py-cv params updated:::[3, 9]
+2023-04-11 09:36:34,518:INFO-pretuning.py-now validating:::max_depth
+2023-04-11 09:36:41,113:DEBUG-pretuning.py-validation score :::[-0.06132109 -0.06047256 -0.06357972 -0.06843529 -0.06789275 -0.07448963
+ -0.06687416 -0.07393    -0.07385229 -0.0749379 ]
+2023-04-11 09:36:41,114:DEBUG-pretuning.py-local max at max_depth:::(array([1, 4, 6, 8]),)
+2023-04-11 09:36:41,114:DEBUG-pretuning.py-cv params updated:::[2, 5, 7, 9]
+2023-04-11 09:36:41,114:INFO-pretuning.py-now validating:::gamma
+2023-04-11 09:38:35,294:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07454924 -0.07470379 -0.07587375 -0.07486175 -0.08346431
+ -0.07862083 -0.09662094]
+2023-04-11 09:38:35,294:DEBUG-pretuning.py-local max at gamma:::(array([4, 6]),)
+2023-04-11 09:38:35,294:DEBUG-pretuning.py-cv params updated:::[0.03, 0.3]
+2023-04-11 09:38:35,295:INFO-tuning.py-pre tuning finished!!
+2023-04-11 09:38:35,295:INFO-tuning_method.py-optimize by using RandomSearch
+2023-04-11 10:17:01,053:DEBUG-tuning_method.py-best_params::: {'subsample': 0.9, 'reg_lambda': 0.1, 'reg_alpha': 0.01, 'min_child_weight': 3, 'max_depth': 9, 'learning_rate': 0.03, 'gamma': 0.03, 'colsample_bytree': 0.7}
+2023-04-11 10:17:01,053:DEBUG-tuning_method.py-best_score::: -0.06080536012831037
+2023-04-11 10:17:01,054:INFO-tuning_method.py-time elpased to tuning::: 0:38:25.757927
+2023-04-11 12:48:02,195:INFO-load_data.py-drop null columns
+2023-04-11 12:48:02,210:INFO-load_data.py-time elapsed to load data:::0.04276013374328613
+2023-04-11 12:48:02,210:DEBUG-load_data.py-sample of data loaded as X:::[0 0 0 ... 0 0 0]
+2023-04-11 12:48:02,210:DEBUG-load_data.py-sample of data loaded as Y:::2.0106
+2023-04-11 12:48:02,212:INFO-load_data.py-input data were split
+2023-04-11 12:48:02,212:INFO-load_data.py-seed:::42
+2023-04-11 12:48:05,219:INFO-tuning.py-random-search
+2023-04-11 12:48:05,219:INFO-pretuning.py-pre tuning start
+2023-04-11 12:48:05,335:INFO-pretuning.py-now validating:::subsample
+2023-04-11 12:48:09,118:DEBUG-pretuning.py-validation score :::[-3.66050355 -0.11146106 -0.12140237 -0.10095249 -0.06885404 -0.06695412
+ -0.07790129 -0.07559798 -0.06795654 -0.07448963]
+2023-04-11 12:48:09,119:DEBUG-pretuning.py-local max at subsample:::(array([1, 5, 8]),)
+2023-04-11 12:48:09,119:DEBUG-pretuning.py-cv params updated:::[0.1, 0.6, 0.9]
+2023-04-11 12:48:09,119:INFO-pretuning.py-now validating:::colsample_bytree
+2023-04-11 12:48:12,491:DEBUG-pretuning.py-validation score :::[-0.18136049 -0.05375263 -0.05879554 -0.0648095  -0.06114965 -0.06810722
+ -0.06422743 -0.06234578 -0.06976935 -0.06663503 -0.07448963]
+2023-04-11 12:48:12,491:DEBUG-pretuning.py-local max at colsample_bytree:::(array([1, 4, 7, 9]),)
+2023-04-11 12:48:12,491:DEBUG-pretuning.py-cv params updated:::[0.1, 0.4, 0.7, 0.9]
+2023-04-11 12:48:12,491:INFO-pretuning.py-now validating:::reg_alpha
+2023-04-11 12:48:15,325:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07417386 -0.07340436 -0.07288664 -0.07349711 -0.0735589
+ -0.07097941 -0.06987261]
+2023-04-11 12:48:15,325:DEBUG-pretuning.py-local max at reg_alpha:::(array([3]),)
+2023-04-11 12:48:15,326:DEBUG-pretuning.py-cv params updated:::[0.01]
+2023-04-11 12:48:15,326:INFO-pretuning.py-now validating:::reg_lambda
+2023-04-11 12:48:18,413:DEBUG-pretuning.py-validation score :::[-0.06748693 -0.06725848 -0.06642707 -0.06485668 -0.0720688  -0.06270846
+ -0.0646266  -0.07448963]
+2023-04-11 12:48:18,413:DEBUG-pretuning.py-local max at reg_lambda:::(array([3, 5]),)
+2023-04-11 12:48:18,413:DEBUG-pretuning.py-cv params updated:::[0.01, 0.1]
+2023-04-11 12:48:18,413:INFO-pretuning.py-now validating:::learning_rate
+2023-04-11 12:51:05,310:DEBUG-pretuning.py-validation score :::[-3.66050355 -0.60452233 -0.06792766 -0.06802401 -0.06739979 -0.07022904
+ -0.07448963 -0.06859804]
+2023-04-11 12:51:05,310:DEBUG-pretuning.py-local max at learning_rate:::(array([2, 4]),)
+2023-04-11 12:51:05,310:DEBUG-pretuning.py-cv params updated:::[0.001, 0.03]
+2023-04-11 12:51:05,310:INFO-pretuning.py-now validating:::min_child_weight
+2023-04-11 12:51:13,714:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07395161 -0.1006823  -0.10745782 -0.09660053 -0.11352508
+ -0.12421868 -0.11149386]
+2023-04-11 12:51:13,715:DEBUG-pretuning.py-local max at min_child_weight:::(array([1, 4]),)
+2023-04-11 12:51:13,715:DEBUG-pretuning.py-cv params updated:::[3, 9]
+2023-04-11 12:51:13,715:INFO-pretuning.py-now validating:::max_depth
+2023-04-11 12:51:19,575:DEBUG-pretuning.py-validation score :::[-0.06132109 -0.06047256 -0.06357972 -0.06843529 -0.06789275 -0.07448963
+ -0.06687416 -0.07393    -0.07385229 -0.0749379 ]
+2023-04-11 12:51:19,575:DEBUG-pretuning.py-local max at max_depth:::(array([1, 4, 6, 8]),)
+2023-04-11 12:51:19,575:DEBUG-pretuning.py-cv params updated:::[2, 5, 7, 9]
+2023-04-11 12:51:19,575:INFO-pretuning.py-now validating:::gamma
+2023-04-11 12:53:03,715:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07454924 -0.07470379 -0.07587375 -0.07486175 -0.08346431
+ -0.07862083 -0.09662094]
+2023-04-11 12:53:03,716:DEBUG-pretuning.py-local max at gamma:::(array([4, 6]),)
+2023-04-11 12:53:03,716:DEBUG-pretuning.py-cv params updated:::[0.03, 0.3]
+2023-04-11 12:53:03,716:INFO-tuning.py-pre tuning finished!!
+2023-04-11 12:53:03,716:INFO-tuning_method.py-optimize by using RandomSearch
+2023-04-11 13:28:11,809:DEBUG-tuning_method.py-best_params::: {'subsample': 0.9, 'reg_lambda': 0.1, 'reg_alpha': 0.01, 'min_child_weight': 3, 'max_depth': 9, 'learning_rate': 0.03, 'gamma': 0.03, 'colsample_bytree': 0.7}
+2023-04-11 13:28:11,810:DEBUG-tuning_method.py-best_score::: -0.06080536012831037
+2023-04-11 13:28:11,810:INFO-tuning_method.py-time elpased to tuning::: 0:35:08.092066
+2023-04-11 13:28:11,836:INFO-load_data.py-drop null columns
+2023-04-11 13:28:11,843:INFO-load_data.py-time elapsed to load data:::0.03189706802368164
+2023-04-11 13:28:11,843:DEBUG-load_data.py-sample of data loaded as X:::[0 0 0 ... 0 0 0]
+2023-04-11 13:28:11,843:DEBUG-load_data.py-sample of data loaded as Y:::2.0106
+2023-04-11 13:28:11,845:INFO-load_data.py-input data were split
+2023-04-11 13:28:11,845:INFO-load_data.py-seed:::42
+2023-04-11 13:30:52,223:INFO-load_data.py-drop null columns
+2023-04-11 13:30:52,249:INFO-load_data.py-time elapsed to load data:::0.06437897682189941
+2023-04-11 13:30:52,249:DEBUG-load_data.py-sample of data loaded as X:::[0 0 0 ... 0 0 0]
+2023-04-11 13:30:52,249:DEBUG-load_data.py-sample of data loaded as Y:::2.0106
+2023-04-11 13:30:52,251:INFO-load_data.py-input data were split
+2023-04-11 13:30:52,251:INFO-load_data.py-seed:::42
+2023-04-11 13:30:55,402:INFO-tuning.py-random-search
+2023-04-11 13:30:55,402:INFO-pretuning.py-pre tuning start
+2023-04-11 13:30:55,493:INFO-pretuning.py-now validating:::subsample
+2023-04-11 13:30:59,052:DEBUG-pretuning.py-validation score :::[-3.66050355 -0.11146106 -0.12140237 -0.10095249 -0.06885404 -0.06695412
+ -0.07790129 -0.07559798 -0.06795654 -0.07448963]
+2023-04-11 13:30:59,053:DEBUG-pretuning.py-local max at subsample:::(array([1, 5, 8]),)
+2023-04-11 13:30:59,053:DEBUG-pretuning.py-cv params updated:::[0.1, 0.6, 0.9]
+2023-04-11 13:30:59,053:INFO-pretuning.py-now validating:::colsample_bytree
+2023-04-11 13:31:02,497:DEBUG-pretuning.py-validation score :::[-0.18136049 -0.05375263 -0.05879554 -0.0648095  -0.06114965 -0.06810722
+ -0.06422743 -0.06234578 -0.06976935 -0.06663503 -0.07448963]
+2023-04-11 13:31:02,498:DEBUG-pretuning.py-local max at colsample_bytree:::(array([1, 4, 7, 9]),)
+2023-04-11 13:31:02,498:DEBUG-pretuning.py-cv params updated:::[0.1, 0.4, 0.7, 0.9]
+2023-04-11 13:31:02,498:INFO-pretuning.py-now validating:::reg_alpha
+2023-04-11 13:31:05,399:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07417386 -0.07340436 -0.07288664 -0.07349711 -0.0735589
+ -0.07097941 -0.06987261]
+2023-04-11 13:31:05,400:DEBUG-pretuning.py-local max at reg_alpha:::(array([3]),)
+2023-04-11 13:31:05,400:DEBUG-pretuning.py-cv params updated:::[0.01]
+2023-04-11 13:31:05,400:INFO-pretuning.py-now validating:::reg_lambda
+2023-04-11 13:31:08,839:DEBUG-pretuning.py-validation score :::[-0.06748693 -0.06725848 -0.06642707 -0.06485668 -0.0720688  -0.06270846
+ -0.0646266  -0.07448963]
+2023-04-11 13:31:08,839:DEBUG-pretuning.py-local max at reg_lambda:::(array([3, 5]),)
+2023-04-11 13:31:08,839:DEBUG-pretuning.py-cv params updated:::[0.01, 0.1]
+2023-04-11 13:31:08,839:INFO-pretuning.py-now validating:::learning_rate
+2023-04-11 13:34:05,394:DEBUG-pretuning.py-validation score :::[-3.66050355 -0.60452233 -0.06792766 -0.06802401 -0.06739979 -0.07022904
+ -0.07448963 -0.06859804]
+2023-04-11 13:34:05,395:DEBUG-pretuning.py-local max at learning_rate:::(array([2, 4]),)
+2023-04-11 13:34:05,395:DEBUG-pretuning.py-cv params updated:::[0.001, 0.03]
+2023-04-11 13:34:05,395:INFO-pretuning.py-now validating:::min_child_weight
+2023-04-11 13:34:14,398:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07395161 -0.1006823  -0.10745782 -0.09660053 -0.11352508
+ -0.12421868 -0.11149386]
+2023-04-11 13:34:14,398:DEBUG-pretuning.py-local max at min_child_weight:::(array([1, 4]),)
+2023-04-11 13:34:14,399:DEBUG-pretuning.py-cv params updated:::[3, 9]
+2023-04-11 13:34:14,399:INFO-pretuning.py-now validating:::max_depth
+2023-04-11 13:34:20,920:DEBUG-pretuning.py-validation score :::[-0.06132109 -0.06047256 -0.06357972 -0.06843529 -0.06789275 -0.07448963
+ -0.06687416 -0.07393    -0.07385229 -0.0749379 ]
+2023-04-11 13:34:20,920:DEBUG-pretuning.py-local max at max_depth:::(array([1, 4, 6, 8]),)
+2023-04-11 13:34:20,920:DEBUG-pretuning.py-cv params updated:::[2, 5, 7, 9]
+2023-04-11 13:34:20,920:INFO-pretuning.py-now validating:::gamma
+2023-04-11 13:36:11,234:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07454924 -0.07470379 -0.07587375 -0.07486175 -0.08346431
+ -0.07862083 -0.09662094]
+2023-04-11 13:36:11,235:DEBUG-pretuning.py-local max at gamma:::(array([4, 6]),)
+2023-04-11 13:36:11,235:DEBUG-pretuning.py-cv params updated:::[0.03, 0.3]
+2023-04-11 13:36:11,236:INFO-tuning.py-pre tuning finished!!
+2023-04-11 13:36:11,236:INFO-tuning_method.py-optimize by using RandomSearch
+2023-04-11 13:54:59,396:DEBUG-tuning_method.py-best_params::: {'subsample': 0.9, 'reg_lambda': 0.1, 'reg_alpha': 0.01, 'min_child_weight': 3, 'max_depth': 9, 'learning_rate': 0.03, 'gamma': 0.03, 'colsample_bytree': 0.7}
+2023-04-11 13:54:59,397:DEBUG-tuning_method.py-best_score::: -0.06080536012831037
+2023-04-11 13:54:59,397:INFO-tuning_method.py-time elpased to tuning::: 0:18:48.160149
+2023-04-11 13:54:59,426:INFO-load_data.py-drop null columns
+2023-04-11 13:54:59,434:INFO-load_data.py-time elapsed to load data:::0.03573918342590332
+2023-04-11 13:54:59,435:DEBUG-load_data.py-sample of data loaded as X:::[0 0 0 ... 0 0 0]
+2023-04-11 13:54:59,435:DEBUG-load_data.py-sample of data loaded as Y:::2.0106
+2023-04-11 13:54:59,436:INFO-load_data.py-input data were split
+2023-04-11 13:54:59,436:INFO-load_data.py-seed:::42
+2023-04-11 13:59:36,293:INFO-load_data.py-drop null columns
+2023-04-11 13:59:36,300:INFO-load_data.py-time elapsed to load data:::0.026793956756591797
+2023-04-11 13:59:36,300:DEBUG-load_data.py-sample of data loaded as X:::[0 0 0 ... 0 0 0]
+2023-04-11 13:59:36,300:DEBUG-load_data.py-sample of data loaded as Y:::2.0106
+2023-04-11 13:59:36,302:INFO-load_data.py-input data were split
+2023-04-11 13:59:36,302:INFO-load_data.py-seed:::42
+2023-04-11 13:59:39,203:INFO-tuning.py-random-search
+2023-04-11 13:59:39,203:INFO-pretuning.py-pre tuning start
+2023-04-11 13:59:39,293:INFO-pretuning.py-now validating:::subsample
+2023-04-11 13:59:42,856:DEBUG-pretuning.py-validation score :::[-3.66050355 -0.11146106 -0.12140237 -0.10095249 -0.06885404 -0.06695412
+ -0.07790129 -0.07559798 -0.06795654 -0.07448963]
+2023-04-11 13:59:42,856:DEBUG-pretuning.py-local max at subsample:::(array([1, 5, 8]),)
+2023-04-11 13:59:42,856:DEBUG-pretuning.py-cv params updated:::[0.1, 0.6, 0.9]
+2023-04-11 13:59:42,856:INFO-pretuning.py-now validating:::colsample_bytree
+2023-04-11 13:59:46,309:DEBUG-pretuning.py-validation score :::[-0.18136049 -0.05375263 -0.05879554 -0.0648095  -0.06114965 -0.06810722
+ -0.06422743 -0.06234578 -0.06976935 -0.06663503 -0.07448963]
+2023-04-11 13:59:46,309:DEBUG-pretuning.py-local max at colsample_bytree:::(array([1, 4, 7, 9]),)
+2023-04-11 13:59:46,309:DEBUG-pretuning.py-cv params updated:::[0.1, 0.4, 0.7, 0.9]
+2023-04-11 13:59:46,310:INFO-pretuning.py-now validating:::reg_alpha
+2023-04-11 13:59:49,199:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07417386 -0.07340436 -0.07288664 -0.07349711 -0.0735589
+ -0.07097941 -0.06987261]
+2023-04-11 13:59:49,199:DEBUG-pretuning.py-local max at reg_alpha:::(array([3]),)
+2023-04-11 13:59:49,199:DEBUG-pretuning.py-cv params updated:::[0.01]
+2023-04-11 13:59:49,199:INFO-pretuning.py-now validating:::reg_lambda
+2023-04-11 13:59:52,522:DEBUG-pretuning.py-validation score :::[-0.06748693 -0.06725848 -0.06642707 -0.06485668 -0.0720688  -0.06270846
+ -0.0646266  -0.07448963]
+2023-04-11 13:59:52,522:DEBUG-pretuning.py-local max at reg_lambda:::(array([3, 5]),)
+2023-04-11 13:59:52,522:DEBUG-pretuning.py-cv params updated:::[0.01, 0.1]
+2023-04-11 13:59:52,522:INFO-pretuning.py-now validating:::learning_rate
+2023-04-11 14:01:12,128:INFO-load_data.py-drop null columns
+2023-04-11 14:01:12,134:INFO-load_data.py-time elapsed to load data:::0.026849031448364258
+2023-04-11 14:01:12,134:DEBUG-load_data.py-sample of data loaded as X:::[0 0 0 ... 0 0 0]
+2023-04-11 14:01:12,134:DEBUG-load_data.py-sample of data loaded as Y:::2.0106
+2023-04-11 14:01:12,136:INFO-load_data.py-input data were split
+2023-04-11 14:01:12,136:INFO-load_data.py-seed:::42
+2023-04-11 14:01:14,971:INFO-tuning.py-random-search
+2023-04-11 14:01:14,972:INFO-pretuning.py-pre tuning start
+2023-04-11 14:01:15,071:INFO-pretuning.py-now validating:::subsample
+2023-04-11 14:01:19,031:DEBUG-pretuning.py-validation score :::[-3.66050355 -0.11146106 -0.12140237 -0.10095249 -0.06885404 -0.06695412
+ -0.07790129 -0.07559798 -0.06795654 -0.07448963]
+2023-04-11 14:01:19,032:DEBUG-pretuning.py-local max at subsample:::(array([1, 5, 8]),)
+2023-04-11 14:01:19,032:DEBUG-pretuning.py-cv params updated:::[0.1, 0.6, 0.9]
+2023-04-11 14:01:19,032:INFO-pretuning.py-now validating:::colsample_bytree
+2023-04-11 14:01:22,983:DEBUG-pretuning.py-validation score :::[-0.18136049 -0.05375263 -0.05879554 -0.0648095  -0.06114965 -0.06810722
+ -0.06422743 -0.06234578 -0.06976935 -0.06663503 -0.07448963]
+2023-04-11 14:01:22,983:DEBUG-pretuning.py-local max at colsample_bytree:::(array([1, 4, 7, 9]),)
+2023-04-11 14:01:22,983:DEBUG-pretuning.py-cv params updated:::[0.1, 0.4, 0.7, 0.9]
+2023-04-11 14:01:22,983:INFO-pretuning.py-now validating:::reg_alpha
+2023-04-11 14:01:26,135:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07417386 -0.07340436 -0.07288664 -0.07349711 -0.0735589
+ -0.07097941 -0.06987261]
+2023-04-11 14:01:26,135:DEBUG-pretuning.py-local max at reg_alpha:::(array([3]),)
+2023-04-11 14:01:26,135:DEBUG-pretuning.py-cv params updated:::[0.01]
+2023-04-11 14:01:26,135:INFO-pretuning.py-now validating:::reg_lambda
+2023-04-11 14:01:29,900:DEBUG-pretuning.py-validation score :::[-0.06748693 -0.06725848 -0.06642707 -0.06485668 -0.0720688  -0.06270846
+ -0.0646266  -0.07448963]
+2023-04-11 14:01:29,900:DEBUG-pretuning.py-local max at reg_lambda:::(array([3, 5]),)
+2023-04-11 14:01:29,900:DEBUG-pretuning.py-cv params updated:::[0.01, 0.1]
+2023-04-11 14:01:29,900:INFO-pretuning.py-now validating:::learning_rate
+2023-04-11 14:04:28,482:DEBUG-pretuning.py-validation score :::[-3.66050355 -0.60452233 -0.06792766 -0.06802401 -0.06739979 -0.07022904
+ -0.07448963 -0.06859804]
+2023-04-11 14:04:28,483:DEBUG-pretuning.py-local max at learning_rate:::(array([2, 4]),)
+2023-04-11 14:04:28,483:DEBUG-pretuning.py-cv params updated:::[0.001, 0.03]
+2023-04-11 14:04:28,483:INFO-pretuning.py-now validating:::min_child_weight
+2023-04-11 14:04:37,867:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07395161 -0.1006823  -0.10745782 -0.09660053 -0.11352508
+ -0.12421868 -0.11149386]
+2023-04-11 14:04:37,867:DEBUG-pretuning.py-local max at min_child_weight:::(array([1, 4]),)
+2023-04-11 14:04:37,867:DEBUG-pretuning.py-cv params updated:::[3, 9]
+2023-04-11 14:04:37,867:INFO-pretuning.py-now validating:::max_depth
+2023-04-11 14:04:44,609:DEBUG-pretuning.py-validation score :::[-0.06132109 -0.06047256 -0.06357972 -0.06843529 -0.06789275 -0.07448963
+ -0.06687416 -0.07393    -0.07385229 -0.0749379 ]
+2023-04-11 14:04:44,610:DEBUG-pretuning.py-local max at max_depth:::(array([1, 4, 6, 8]),)
+2023-04-11 14:04:44,610:DEBUG-pretuning.py-cv params updated:::[2, 5, 7, 9]
+2023-04-11 14:04:44,610:INFO-pretuning.py-now validating:::gamma
+2023-04-11 14:06:38,414:DEBUG-pretuning.py-validation score :::[-0.07448963 -0.07454924 -0.07470379 -0.07587375 -0.07486175 -0.08346431
+ -0.07862083 -0.09662094]
+2023-04-11 14:06:38,414:DEBUG-pretuning.py-local max at gamma:::(array([4, 6]),)
+2023-04-11 14:06:38,415:DEBUG-pretuning.py-cv params updated:::[0.03, 0.3]
+2023-04-11 14:06:38,415:INFO-tuning.py-pre tuning finished!!
+2023-04-11 14:06:38,415:INFO-tuning_method.py-optimize by using RandomSearch
+2023-04-11 14:28:36,774:DEBUG-tuning_method.py-best_params::: {'subsample': 0.9, 'reg_lambda': 0.1, 'reg_alpha': 0.01, 'min_child_weight': 3, 'max_depth': 9, 'learning_rate': 0.03, 'gamma': 0.03, 'colsample_bytree': 0.7}
+2023-04-11 14:28:36,775:DEBUG-tuning_method.py-best_score::: -0.06080536012831037
+2023-04-11 14:28:36,775:INFO-tuning_method.py-time elpased to tuning::: 0:21:58.358527
+2023-04-11 14:28:36,808:INFO-load_data.py-drop null columns
+2023-04-11 14:28:36,819:INFO-load_data.py-time elapsed to load data:::0.04168510437011719
+2023-04-11 14:28:36,819:DEBUG-load_data.py-sample of data loaded as X:::[0 0 0 ... 0 0 0]
+2023-04-11 14:28:36,819:DEBUG-load_data.py-sample of data loaded as Y:::2.0106
+2023-04-11 14:28:36,821:INFO-load_data.py-input data were split
+2023-04-11 14:28:36,822:INFO-load_data.py-seed:::42
+2023-04-11 14:29:42,379:DEBUG-train.py-validate score:::[-0.32653687 -0.23111345 -0.13030827]
+2023-04-11 14:29:42,380:DEBUG-train.py-validate mead:::-0.22931952862817473
+2023-04-11 14:29:42,474:DEBUG-train.py-model saved!!

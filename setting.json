@@ -4,6 +4,6 @@
     "SEED": 42,
     "SCORING": "neg_mean_squared_error",
     "METRICS": "rmse",
-    "x_range": [2, 2049],
+    "x_range": [2, 2050],
     "y_column": "T1"
 }
