@@ -28,6 +28,8 @@ def xgb_pred_val(csv_path, model_path):
 
     print(r2)
 
+    return model
+
 
 if __name__ == '__main__':
     import argparse

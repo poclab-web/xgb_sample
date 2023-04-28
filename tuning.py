@@ -10,6 +10,8 @@ from required_functions.validate import kfold
 from required_functions.pretuning import pretuning
 from required_functions.tuning_method import TuningMethod
 
+from sklearn.metrics import r2_score
+
 import logging
 logger = logging.getLogger('XGBoost')
 
@@ -33,6 +35,7 @@ def tune(csv_path, task="regression", tuning_method="grid_search"):
         # pretuning
         cv_train = pretuning(model, x_train, y_train)
         logger.info('pre tuning finished!!')
+        print(cv_train)
         # tuning
         tuner = TuningMethod(model, cv_train)
         best_params = tuner.grid_search(x_train, y_train)
@@ -42,6 +45,7 @@ def tune(csv_path, task="regression", tuning_method="grid_search"):
         # pretuning
         cv_train = pretuning(model, x_train, y_train)
         logger.info('pre tuning finished!!')
+        print(cv_train)
         # tuning
         tuner = TuningMethod(model, cv_train)
         best_params = tuner.random_search(x_train, y_train)

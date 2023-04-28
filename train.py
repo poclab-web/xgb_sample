@@ -13,6 +13,8 @@ from tuning import tune
 
 from required_functions.logging import set_logger
 
+from sklearn.metrics import r2_score
+
 def train(args):
     from logging import getLogger
     logger = getLogger('XGBoost')
@@ -38,6 +40,12 @@ def train(args):
     x_train, x_test, y_train, y_test = get_test_train_data(args.csv_path, setting['x_range'], setting["y_column"])
     # training
     model.fit(x_train, y_train)
+    
+    # calculate training r2_score
+    y_pred = model.predict(x_train)
+    print('r2score:::', r2_score(y_pred=y_pred, y_true=y_test))
+
+    print('r2 score of training...:::', )
     
     # validate model
     scores = kfold(model, x_test, y_test)
